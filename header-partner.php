@@ -15,10 +15,10 @@
 <body> 
 <header>
 	<div class="container1">
-		<a href="<?php echo site_url()?>"><div class="logo"></div></a>	
+    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
     <div class="title">
-    <h1><?php echo ot_get_option( 'partner_heading' );?></h1>
-  </div>
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
+      <h1><?php echo ot_get_option( 'partner_heading' );?></h1>
+    </div>
+		<a href="<?php echo site_url()?>"><div class="logo"></div></a>  
 	</div>
 </header>

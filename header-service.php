@@ -15,10 +15,10 @@
 <body> 
 <header>
 	<div class="container1">
-		<a href="<?php echo site_url()?>"><div class="logo"></div></a>	
+    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
     <div class="title">
       <h1><?php echo the_title();?></h1>
     </div>
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
+    <a href="<?php echo site_url()?>"><div class="logo"></div></a>  
 	</div>
 </header>

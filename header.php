@@ -15,10 +15,10 @@
 <body> 
 <header>
 	<div class="container1">
-		<a href="http://ar.mizalabs.com/en"><div class="logo"></div></a>		
+    <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>		
     <div class="title blog">
-      <h1><?php _e('Blog','aramas')?></h1>
+      <h1><?php _e('مدونة أو أخبار','aramas')?></h1>
     </div>
-		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
+		<a href="http://ar.mizalabs.com/en"><div class="logo"></div></a>
 	</div>
 </header>

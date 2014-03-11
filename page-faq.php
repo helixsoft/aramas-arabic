@@ -6,7 +6,7 @@
 
 get_header('service'); ?>
 <div class="fcontainer clearfix">
-		<div class="container">
+		<div class="container" style="direction:RTL;">
 			<div class="content faq">
 							<?php $wp_query_faq = new WP_Query(); ?>
 		          <?php $wp_query_faq->query('post_type=faq&posts_per_page=9999&post_status=publish'); ?>
