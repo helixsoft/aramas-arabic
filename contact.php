@@ -1,36 +1,20 @@
-<?php
-/**
- * Template name: Contact Page Template 
- * The template for displaying contact pages.
- */
+<?php 
+	include('../../../wp-load.php');
+	$name = $_POST['name'];
+  	$email = $_POST['email'];
+  	$message = $_POST['message'];
 
-get_header('service'); ?>
-<?php /* The loop */ ?>
-<?php while ( have_posts() ) : the_post(); ?>
-<div class="ccontainer">
-		<div class="content">
-			<div class="top">
-				<p><?php echo ot_get_option( 'contact_description' );?></p>
-			</div>
-			<div class="contact-body">
-		<div class="contact-body-left">
-			<h2> <?php _e('تواصل معنا','aramas')?></h2>
-            <div class="contact-form">
-            	<?php the_content();?>
-            </div>
-		</div>
-		<div class="contact-body-right">
-			<h1><?php echo ot_get_option( 'contact_address_first' );?> </h1>
-			<h1><?php echo ot_get_option( 'contact_address_second' );?> </h1>
-			<h1><?php echo ot_get_option( 'contact_address_phone' );?></h1>
-			 <div class="img">
-                                 <div class="line"></div>
-                                <img src="<?php echo ot_get_option( 'contact_info_scan' );?>">
-                                <p>Scan to save our contact information </p>
-                             </div>
-		</div>
-	</div>
-		</div>
-</div>		
-<?php endwhile;?>
-<?php get_footer();?>
+  	//php mailer variables
+  	$to = get_option('admin_email');
+  	$subject = "Someone sent a message from ".get_bloginfo('name');
+  	$headers = 'From: '. $email . "\r\n" .
+    'Reply-To: ' . $email . "\r\n";
+    if(empty($name) || empty($message) || empty($email)){
+      echo "Please supply all information.";
+    }else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+    	echo "Email Address Invalid.";
+    }else{
+          $sent = wp_mail($to, $subject, strip_tags($message).'Name:'.$name, $headers);
+          if($sent) echo "OK"; //message sent!
+          else echo "ERROR"; //message wasn't sent
+    }

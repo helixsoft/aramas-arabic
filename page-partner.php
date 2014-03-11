@@ -6,7 +6,7 @@
 
 get_header('partner'); ?>
 <div class="pcontainer clearfix">
-	<div class="content">
+	<div class="pcontent">
 		<div class="top">
 			<h1><?php echo ot_get_option( 'partner_sub_heading' );?></h1>
 			<p><?php echo ot_get_option( 'partner_description' );?></p>

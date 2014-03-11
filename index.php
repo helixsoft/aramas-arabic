@@ -16,7 +16,7 @@ get_header(); ?>
 				<div class="blogimg" id="<?php echo the_ID();?>">
 					<?php echo get_the_post_thumbnail($post->ID, 'small-container'); ?>
 					<h2><?php the_author();?></h2>
-					<h3><?php the_date('m-d-Y'); ?></h3>
+					<h3><?php echo get_the_date('d-m-Y'); ?></h3>
 				</div>	
 			 <?php endwhile;endif; ?>	
 			</div>			
@@ -25,7 +25,7 @@ get_header(); ?>
 			<div class="bright <?php echo $i==0 ? 'active':''?>" id="<?php echo the_ID();?>">
 				<h1><?php echo get_the_title();?></h1>
 				<div class="bimage"><?php echo get_the_post_thumbnail($post->ID, 'slider-container'); ?></div>
-				<div class="bartist"><?php _e('By','ar'); echo " : "; the_author();  echo " | "; the_date('m-d-Y'); ?></div>
+				<div class="bartist"><?php _e('By','ar'); echo " : "; the_author();  echo " | "; echo get_the_date('d-m-Y'); ?></div>
 				<div class="bcontent"><?php the_content();?></div>
 			</div>	
 			<?php $i++;endwhile;endif; ?>	

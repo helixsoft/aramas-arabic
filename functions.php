@@ -51,7 +51,7 @@ function ar_setup() {
 add_action( 'after_setup_theme', 'ar_setup' );
 
 function custom_excerpt_length( $length ) {
-		return 15;
+		return 35;
 	}
 	add_filter( 'excerpt_length', 'custom_excerpt_length',999 );
 	
@@ -64,7 +64,7 @@ function aramas_scripts_styles() {
 	wp_deregister_script('jquery');
 	wp_register_script('jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js", false, true);
 	wp_enqueue_script('jquery');
-	wp_enqueue_script( 'jquery.main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), false, true );
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), false, true );
 	
 }
 add_action( 'wp_enqueue_scripts', 'aramas_scripts_styles' );
@@ -620,4 +620,4 @@ function example_ajax_request() {
 add_action( 'wp_ajax_example_ajax_request', 'example_ajax_request' );
 // If you wanted to also use the function for non-logged in users (in a theme for example)
 add_action( 'wp_ajax_nopriv_example_ajax_request', 'example_ajax_request' );
-?>
+

@@ -8,17 +8,17 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <title><?php wp_title( '|', true, 'right' ); ?></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no"> 
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/css/style.css'); ?>" type="text/css" media="(min-width:320px)" />  
   <?php wp_head();?>
 <body> 
 <header>
 	<div class="container1">
-		<a href="http://ar.mizalabs.com"><div class="logo"></div></a>	
-    <div class="title" >
-      <h1 style="line-height:1.2;margin-top: -12px;"><?php echo ot_get_option( 'homepage_title' );?></h1>
-      <img src="<?php bloginfo('template_url')?>/images/ar_homepage_subtitle.png"/>
+		<a href="<?php echo site_url()?>"><div class="logo"></div></a>	
+    <div class="title home">
+      <h1><?php echo ot_get_option( 'homepage_title' );?></h1>
+      <p><?php echo ot_get_option( 'homepage_subtitle' );?></p>
     </div>	
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
 	</div>

@@ -296,18 +296,6 @@ function custom_theme_options() {
         'taxonomy'    => '',
         'class'       => ''
       ),
-                 array(
-        'id'          => 'contact_info_scan',
-        'label'       => 'Contact Info Scan',
-        'desc'        => '',
-        'std'         => '',
-        'type'        => 'upload',
-        'section'     => 'contact-page',
-        'rows'        => '',
-        'post_type'   => '',
-        'taxonomy'    => '',
-        'class'       => ''
-      ),
     )
   );
   
