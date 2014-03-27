@@ -34,6 +34,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-family: '51HDSUN';
     src: url(fonts/51HDSUN.TTF) format('truetype');
 }
+@font-face {
+    font-family: 'Mj_Sazeh Light';
+    src: url(fonts/Mj_Sazeh Light.ttf) format('opentype');
+}
 .clearfix:after {
     content: ".";
     display: block;
@@ -96,9 +100,9 @@ header .title.blog {
 header .title.home {
     margin: 0 auto;
     width: 633px;
-    height: 100px;
+    height: 80px;
     float: left;
-    padding-top: 20px;
+    padding-top: 26px;
     padding-right: 20px;
 }
 header .title h1 {
@@ -106,7 +110,9 @@ header .title h1 {
     margin: 0;
     padding: 0;
     text-align: right;
-     font-family: '51HDSUN';
+    font-family: 'elham';
+    font-weight: normal;
+    line-height: 1.2;
 }
 header .title p {
     font-size: 22px;
@@ -114,7 +120,7 @@ header .title p {
     padding: 0;
     margin-left: 10px;
     text-align: right;
-     font-family: '51HDSUN';
+    font-family: 'elham';
 }
 header .container1 nav {
     width: 447px;

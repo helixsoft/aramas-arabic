@@ -6,7 +6,7 @@
  * @subpackage gs
  * @since gs 1.0
  */
-get_header('service');?>
+get_header('single-service');?>
 <div class="scontainer clearfix">
 		<div class="content">
 			<div class="right">
