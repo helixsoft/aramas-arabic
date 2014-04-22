@@ -84,9 +84,17 @@ header .container1 .logo {
 header .title {
     margin: 0 auto;
     width: 633px;
-    height: 57px;
+    height: 76px;
     float: left;
-    padding-top: 57px;
+    padding-top: 24px;
+    padding-right: 20px;
+}
+header .title.service{
+    margin: 0 auto;
+    width: 633px;
+    height: 59px;
+    float: left;
+    padding-top: 40px;
     padding-right: 20px;
 }
 header .title.blog {
@@ -104,6 +112,30 @@ header .title.home {
     float: left;
     padding-top: 26px;
     padding-right: 20px;
+}
+header .title.faq {
+margin: 0 auto;
+width: 633px;
+height: 67px;
+float: left;
+padding-top: 32px;
+padding-right: 20px;
+}
+header .title.contact {
+margin: 0 auto;
+width: 633px;
+height: 68px;
+float: left;
+padding-top: 31px;
+padding-right: 20px;
+}
+header .title.inner {
+margin: 0 auto;
+width: 633px;
+height: 55px;
+float: left;
+padding-top: 45px;
+padding-right: 20px;
 }
 header .title h1 {
     font-size: 45px;
@@ -223,7 +255,9 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 .tcontainer .left .c3 p {
     font-size: 14px;
     margin-left: 10px;
-    margin-top: -12px;
+    margin-top: -35px;
+    height: 52px;
+    overflow: hidden;
     word-wrap: break-word;
 }
 .tcontainer .left .c4 {
@@ -257,7 +291,7 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
     margin:0;
 }
 .tcontainer .left .c4 .r p {
-    font-size: 15px;
+    font-size: 14px;
     text-align: right;
     //vertical-align: middle;
 }
@@ -406,12 +440,12 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 }
 .content .top h1 {
     font-weight: 400;
-    font-family: "Nexa Bold";
+    font-family: 'elham';
     color: #9a8e55;
     margin-right: 20px;
+    height: auto;
     font-weight: bold;
-    font-size: 42px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 0px;
     text-align: right;
 }
@@ -423,7 +457,7 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 .content .top .left p {
     margin-right: 20px;
     font-family: "Nexa Light";
-    margin-top: 0px;
+    margin-top: 16px;
     text-align: right;
 }
 .content .top .right {
@@ -438,16 +472,16 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 }
 .content .top .right h1 {
     margin-left: 20px;
-    font-family: "Nexa Bold";
+    font-family: 'elham';
     font-weight: bold;
-    font-size: 42px;
-    margin-top: 10px;
+    height: auto;
+    margin-top: 30px;
     margin-bottom: 0px;
 }
 .content .top .right p {
     margin-right: 20px;
     font-family: "Nexa Light";
-    margin-top: 0px;
+    margin-top: 16px;
     text-align: right;
 }
 .content .bottom {
@@ -456,9 +490,9 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
     height: auto;
 }
 .content .bottom h1 {
-    margin-top: 170px;
+    margin-top: 200px;
     font-size: 42px;
-    margin-bottom: 0px;
+    margin-bottom: 22px;
     text-align: right;
 }
 .content .bottom img {
@@ -914,6 +948,7 @@ footer .container .rights {
     width: 94%;
     height: 80px;
     margin-top: 10px;
+    margin-right: 20px;
 }
 .fcontainer .content .heading .button {
     width: 29px;
@@ -1956,8 +1991,8 @@ left: 137px;
     font-size:12px;
     letter-spacing:1px;
     text-align: left;
-    margin-left: 20px;
-    color: #fff;
+    margin-left: 0px;
+    color: #000;
 }
 
 input:focus{

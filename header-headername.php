@@ -17,8 +17,8 @@
 	<div class="container1">
     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
     <div class="title home">
-      <h1><?php echo ot_get_option( 'homepage_title' );?></h1>
-      <p><?php echo ot_get_option( 'homepage_subtitle' );?></p>
+      <h1 class="typeface-js" style="font-family: Tahoma"><?php echo ot_get_option( 'homepage_title' );?></h1>
+      <p class="typeface-js" style="font-family: Tahoma"><?php echo ot_get_option( 'homepage_subtitle' );?></p>
     </div>	
 		<a href="<?php echo site_url()?>"><div class="logo"></div></a>  
 	</div>

@@ -12,7 +12,7 @@
   	$headers = 'From: '. $email . "\r\n" .
     'Reply-To: ' . $email . "\r\n";
     if(empty($fname) || empty($lname) || empty($phone)|| empty($message) || empty($email)){
-      echo "Please supply all information.";
+      echo "الرجاء تزويدنا بجميع المعلومات المطلوبة";
     }else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
     	echo "Email Address Invalid.";
     }else{

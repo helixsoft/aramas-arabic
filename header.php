@@ -16,8 +16,8 @@
 <header>
 	<div class="container1">
     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>		
-    <div class="title blog">
-      <h1><?php _e('مدونة أو أخبار','aramas')?></h1>
+    <div class="title">
+      <h1 class="typeface-js" style="font-family: Tahoma"><img src="<?php echo IMAGES?>/ar_blog_title.png"></h1>
     </div>
 		<a href="http://ar.mizalabs.com/en"><div class="logo"></div></a>
 	</div>

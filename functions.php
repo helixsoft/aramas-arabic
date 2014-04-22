@@ -65,7 +65,9 @@ function aramas_scripts_styles() {
 	wp_register_script('jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js", false, true);
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), false, true );
-	
+	wp_enqueue_script( 'typeface', get_template_directory_uri() . '/js/typeface-0.15.js',null, false, true );
+	wp_enqueue_script( 'fontface', get_template_directory_uri() . '/js/mcs_alhada_s_u_normal._agfa_mcs..typeface.js',null, false, true );
+	wp_enqueue_script( 'fontface', get_template_directory_uri() . '/js/tahoma_regular.typeface.js',null, false, true );
 }
 add_action( 'wp_enqueue_scripts', 'aramas_scripts_styles' );
 

@@ -16,8 +16,8 @@
 <header>
 	<div class="container1">
     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
-    <div class="title">
-      <h1><?php echo the_title();?></h1>
+    <div class="title inner">
+      <h1 class="typeface-js" style="font-family: Tahoma;"><?php echo the_title();?></h1>
     </div>
     <a href="<?php echo site_url()?>"><div class="logo"></div></a>  
 	</div>

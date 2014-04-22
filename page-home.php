@@ -9,7 +9,7 @@ get_header('headername');
 <div class="tcontainer clearfix">		
 	<div class="right">
 		<div class="hedr">
-			<h1><a href="<?php echo site_url('/blog/')?>" style="text-decoration:none;color:#fff;"><?php _e('Latest Blog','aramas')?></a></h1>
+			<h1 class="typeface-js" style="font-family: Tahoma;font-weight:normal;"><a href="<?php echo site_url('/blog/')?>" style="text-decoration:none;color:#fff;"><?php _e('المدونة','aramas')?></a></h1>
 		</div>
 		<div class="content">
 			<div class="slidewrap">
@@ -20,10 +20,10 @@ get_header('headername');
 			              while ($wp_query->have_posts()) : $wp_query->the_post();
 			              ?>
 				<li class="slide">
-						<?php echo get_the_post_thumbnail($post->ID, 'full-size'); ?>	
+						<a href="<?php echo site_url('/blog/')?>"><?php echo get_the_post_thumbnail($post->ID, 'full-size'); ?></a>	
 						<div class="po">
 						<h2><a href="<?php echo site_url('/blog/')?>" style="text-decoration:none;color:#111;font-size:20px;"><?php echo get_the_title();?></a></h2>
-						<p><?php the_excerpt();?></p>
+						<a href="<?php echo site_url('/blog/')?>" style="text-decoration:none;color:#111;"><p><?php the_excerpt();?></p></a>
 						</div>
 					</li>
 				 <?php
@@ -49,7 +49,7 @@ get_header('headername');
 			              ?>
 			        <?php if(get_the_post_thumbnail($post->ID,'full-size')) {?>
 			        <li class="slide">  
-			          <a href="<?php echo site_url('/services/')?>"><?php echo get_the_post_thumbnail($post->ID,'full-size');?></a>
+			          <a href="<?php echo  get_permalink( $post->ID );?>"><?php echo get_the_post_thumbnail($post->ID,'full-size');?></a>
 			        </li>
 			        <?php } ?>
 			        <?php
@@ -103,7 +103,7 @@ get_header('headername');
 			              ?>
 			        <li class="slide">  
 			          <h1><a href="<?php echo site_url('/faqs/')?>" style="text-decoration:none;color:#111;"><?php the_title();?></a></h1>
-			          <p><?php the_excerpt();?></p>
+			          <p><a href="<?php echo site_url('/faqs/')?>" style="text-decoration:none;color:#111;"><?php the_excerpt();?></a></p>
 			        </li>
 			        <?php
 			              endwhile;
@@ -122,7 +122,7 @@ get_header('headername');
 		</div>
 		<div class="c4">
 			<div class="l">
-			<h1><?php echo ot_get_option( 'live_feed' );?></h1>
+			<h1 class="typeface-js" style="font-family: Tahoma;font-weight: normal;"><img src="<?php echo IMAGES?>/live_feeds.png" style="max-width: 100%;float: right;"></h1>
 			</div>
 			<div class="r">
 			<div class="slidewrap4" data-autorotate="4000">
@@ -174,8 +174,7 @@ get_header('headername');
 			</div>
 			<div class="div"></div>
 			<div class="col">
-				<h1><?php echo ot_get_option( 'partner_heading' );?></h1>
-				<p><?php echo ot_get_option( 'partner_sub_heading' );?></p>
+				<img src="<?php echo IMAGES;?>/slider_partner_title.png" style="max-width: 100%;float: right;margin-top: -2px;">
 			</div>
 		</div>
 	</div>

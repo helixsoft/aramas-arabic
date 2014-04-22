@@ -4,7 +4,7 @@
  * The template for displaying contact pages.
  */
 
-get_header('service'); ?>
+get_header('contact'); ?>
 <?php /* The loop */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 <div class="ccontainer">
@@ -24,7 +24,7 @@ get_header('service'); ?>
         		<div class="contact-form">
         			<?php the_content();?>
 	            	<form id="contact-us" action="" method="post" name="contactForm">
-						<input type="text" name="fname" value="" class="txt" style="direction:RTL;" placeholder="FIRST NAME">
+						<input type="text" name="fname" value="" class="txt" style="direction:RTL;" placeholder="الأسم الاول">
 						<input type="text" name="lname" value="" class="txt" style="direction:RTL;" placeholder="اللقب">
 						<input type="email" name="email" value="" class="txt" style="direction:RTL;" placeholder="البريد الإلكتروني">
 						<input type="text" name="phone" value=""  class="txt" style="direction:RTL;" placeholder="رقم الهاتف">

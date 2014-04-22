@@ -4,7 +4,7 @@
  * The template for displaying faq pages.
  */
 
-get_header('service'); ?>
+get_header('faq'); ?>
 <div class="fcontainer clearfix">
 		<div class="container" style="direction:RTL;">
 			<div class="content faq">
