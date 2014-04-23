@@ -4427,6 +4427,8 @@ $(document).ready(function () {
     $(".bright").jScrollPane({
         wheelSpeed: 120
     });
+    
+    
     //$(".container").jScrollPane({
     //    wheelSpeed: 120
     //});

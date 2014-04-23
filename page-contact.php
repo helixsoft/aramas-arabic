@@ -24,8 +24,8 @@ get_header('contact'); ?>
         		<div class="contact-form">
         			<?php the_content();?>
 	            	<form id="contact-us" action="" method="post" name="contactForm">
-						<input type="text" name="fname" value="" class="txt" style="direction:RTL;" placeholder="الأسم الاول">
-						<input type="text" name="lname" value="" class="txt" style="direction:RTL;" placeholder="اللقب">
+						<input type="text" name="fname" value="" class="txt" style="direction:RTL;" placeholder="اللقب">
+						<input type="text" name="lname" value="" class="txt" style="direction:RTL;" placeholder="الأسم الاول">
 						<input type="email" name="email" value="" class="txt" style="direction:RTL;" placeholder="البريد الإلكتروني">
 						<input type="text" name="phone" value=""  class="txt" style="direction:RTL;" placeholder="رقم الهاتف">
 						<textarea name="message" cols="40" rows="10" class="txtarea" style="direction:RTL;"placeholder="رسالة"></textarea>

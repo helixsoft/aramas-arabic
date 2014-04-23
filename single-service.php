@@ -11,7 +11,7 @@ get_header('single-service');?>
 		<div class="content">
 			<div class="right">
 				<div class="up" style="direction:RTL;">
-					<h1><?php _e('ما تحتاج إلى معرفته','aramas')?></h1>
+					<h1><?php _e('ما تحتاج معرفتة','aramas')?></h1>
 					<p><?php echo get_post_field('post_content', $post_id);?></p>
 				</div>
 				<div class="down">
@@ -91,8 +91,8 @@ get_header('single-service');?>
 				</div>
 				<div style="width:500px;margin-left:20px">
 				<div class="slidewrap09">
-					<ul class="slidecontrols" style="margin-left:380px;margin-top:20px;position:relative;top:-12px;"><!--339 -->
-						<li style="float:left;text-decoration:none;"><a class="move current" href="#" data-key="0"><?php _e('التجارية العلامات','aramas');?></a></li><!--<li style="float:left"><a>&nbsp;/&nbsp;</a></li>-->
+					<ul class="slidecontrols" style="margin-left:423px;margin-top:50px;position:relative;top:-33px;font-family: Arial, Helvetica, sans-serif;font-weight: 700;"><!--339 -->
+						<li style="float:left;text-decoration:none;"><a class="move current" href="#" data-key="0" style=" font-size: 18px; "><?php _e('علامة تجارية','aramas');?></a></li><!--<li style="float:left"><a>&nbsp;/&nbsp;</a></li>-->
 						<!--<li style="float:left;text-decoration:none;"><a class="move" href="#" data-key="1">Testimonials</a></li>-->
 					</ul>
 					<div class="bot">		

@@ -450,9 +450,13 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
     text-align: right;
 }
 .pcontent .top h1 {
-    font-weight: 400;
-    font-family: MyriadPro-Regular;
+    font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
     color: #9a8e55;
+    text-align: right;
+}
+.pcontent .top p{
+    text-align: right;
 }
 .content .top .left p {
     margin-right: 20px;
@@ -481,7 +485,7 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 .content .top .right p {
     margin-right: 20px;
     font-family: "Nexa Light";
-    margin-top: 16px;
+    margin-top: 25px;
     text-align: right;
 }
 .content .bottom {
@@ -490,7 +494,7 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
     height: auto;
 }
 .content .bottom h1 {
-    margin-top: 200px;
+    margin-top: 216px;
     font-size: 42px;
     margin-bottom: 22px;
     text-align: right;
@@ -569,7 +573,7 @@ header .container1 nav a:hover, header .container1 nav ul li.current_page_item a
 }
 .scontainer .content .left {
     width: 515px;
-    height: 400px;
+    height: 418px;
     border-left: 1px solid #959595;
     margin-top: 0px;
     float: left;
@@ -616,10 +620,14 @@ border: 1px solid #9f9f9f;
 .scontainer .content .right .up h1{
     margin-top: 0px;
     text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 .up p {
     color: #1f1f24;
     text-align: right;
+    padding-left:20px; 
 }
 .scontainer .content .right .down {
     width: 100%;
@@ -630,8 +638,8 @@ border: 1px solid #9f9f9f;
 .down h2 {
     font-size: 20px;
     text-transform: uppercase;
-    margin-top: 4px;
-margin-bottom: 6px;
+    margin-top: 12px;
+margin-bottom: 12px;
 text-align: right;
 }
 .down-contact-form {
@@ -666,6 +674,7 @@ text-align: right;
     float: left;
     margin-top: 20px;
     //margin-left: 20px;
+    resize: none;
 }
 .down-contact-form input[type=submit] {
     float: right;
@@ -761,6 +770,8 @@ ul {
     font-weight: 700;
     margin: 0;
     margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
 }
 .contact-form {
     width: 814px;
@@ -799,6 +810,7 @@ input[type=date], input[type=datetime-local], input[type=datetime], input[type=e
     -moz-transition: -moz-box-shadow .45s, border-color .45s ease-in-out;
     transition: box-shadow .45s, border-color .45s ease-in-out;
     outline: 0;
+    resize: none;
 }
 .contact-form input[type=email], .contact-form input[type=text] {
     width: 394px;
@@ -820,6 +832,7 @@ input[type=date], input[type=datetime-local], input[type=datetime], input[type=e
     background-color: #e1e1e1;
     border: 1px solid #acacac;
     float: left;
+    resize: none;
 }
 .contact-form input[type=submit] {
     float: right;
@@ -848,7 +861,7 @@ input[type=date], input[type=datetime-local], input[type=datetime], input[type=e
     margin: 0 auto;
     width: 200px;
     height: 183px;
-    background: url(images/scan.png) center no-repeat;
+    background: url(images/scan.jpg) center no-repeat;
     border-top: 1px solid #1f1f24;
 }
 footer {
@@ -944,6 +957,25 @@ footer .container .rights {
     overflow-x: hidden; 
     outline: 0;
 }
+/* Let's get this party started */
+.fcontainer .container::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+/* Track */
+.fcontainer .container::-webkit-scrollbar-track {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #cecece; 
+}
+ 
+/* Handle */
+.fcontainer .container::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: #828282; 
+}
+
 .fcontainer .content {
     width: 94%;
     height: 80px;
@@ -956,6 +988,7 @@ footer .container .rights {
     background: url(images/plus.png)center no-repeat;
     float: right;
     margin-left: 10px;
+    cursor: pointer;
 }
 .fcontainer .content .heading .button.active {
     background: url(images/minus.png)center no-repeat;
@@ -970,10 +1003,10 @@ footer .container .rights {
     width: 100%;
     margin: 0;
     height: 29px;
-    font-family: MyriadPro-Regular;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
     border-bottom: 1px solid #7d7d80;
     font-size: 20px;
-    font-weight: 400;
 }
 .fcontainer .content .heading .description {
     width: 100%;
@@ -1193,20 +1226,23 @@ left: 137px;
 }
 .full .half {
     float: left;
-    width: 550px;
+    width: 543px;
     height: auto;
 }
 .full .half h1 {
     margin: 0;
-    font-size: 25px;
+    font-size: 30px;
     color: #9a8e55;
+    font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
+text-align: right;
 }
 .full .half p {
     margin: 0;
     font-size: 16px;
-    padding-right: 20px;
+    padding-left: 20px;
     margin-top: 2px;
-    text-align: left;
+    text-align: right;
 }
 .move_down{
     margin-top: 20px;
@@ -1218,8 +1254,11 @@ left: 137px;
     margin-top: 20px;
 }
 .full .halfn h4 {
+    font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
     color: #9a8e55;
-    font-size: 12px;
+    font-size: 16px;
+    text-align: left;
 }
 .full .halfn img {
     max-width: 250px!important;
@@ -1532,7 +1571,7 @@ left: 137px;
     border-top: 1px solid #1f1f24;
 }
 .blogcontent .bleft {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 560px;
     height: 90%;
     float: left;
@@ -1546,6 +1585,7 @@ left: 137px;
     margin-right: 37px;
     //margin-top: 12px;
     padding-bottom: 10px;
+    cursor: pointer;
 }
 .bleft .blogimg:nth-child(3n-2){
     margin-right: 0px;
@@ -1562,7 +1602,7 @@ left: 137px;
     padding: 0;
 }
 .blogcontent .bright {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 612px;
     height: 90%;
     float: left;
@@ -1573,12 +1613,14 @@ left: 137px;
     outline: 0;
 }
 .bright h1 {
-    font-family: MyriadPro-Regular;
+    font-family: Arial, Helvetica, sans-serif;
+font-weight: 700;
     color: #9a8e55;
     font-size: 35px;
     margin: 0;
     padding-right: 20px;
     line-height: 35px;
+    margin-bottom: 10px;
 }
 .bright .bimage {
     width: 580px;
@@ -1891,7 +1933,7 @@ left: 137px;
     text-decoration: capitalize;
 }
 #owl-demo .owl-wrapper-outer{
-    margin-top: 20px;
+    margin-top: 7px;
 }
 #owl-demo .owl-controls{
     margin-top: 0px;
