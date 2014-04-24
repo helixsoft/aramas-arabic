@@ -1226,7 +1226,7 @@ left: 137px;
 }
 .full .half {
     float: left;
-    width: 543px;
+    width: 793px;
     height: auto;
 }
 .full .half h1 {
@@ -1236,6 +1236,15 @@ left: 137px;
     font-family: Arial, Helvetica, sans-serif;
 font-weight: 700;
 text-align: right;
+}
+.full .half a{
+    margin: 0;
+    font-size: 16px;
+    color: #9a8e55;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 10px;
 }
 .full .half p {
     margin: 0;
@@ -1282,7 +1291,7 @@ font-weight: 700;
 }
 .fancybox-skin {
     position: relative;
-    background: #f9f9f9;
+    background: #fff;
     color: #444;
     text-shadow: none;
     -webkit-border-radius: 4px;
@@ -2035,6 +2044,7 @@ font-weight: 700;
     text-align: left;
     margin-left: 0px;
     color: #000;
+    float: left;
 }
 
 input:focus{

@@ -12,15 +12,12 @@
           <div class="item"><a class="fancybox sds" href="#inline<?php echo the_ID();?>"><img src="<?php echo $thumb_url[0];?>" /></a>
             <div id="inline<?php echo the_ID();?>" style="width:800px!important;height:auto;display: none;">
               <div class="full">
-                <div class="halfn">
-                  <img src="<?php echo get_field('big_image')?>" />
-                  <a href="<?php echo get_field('website_link')?>" target="_blank" style="text-decoration:none;float:left;color:#ff0000;"><h4>قم بزيارة موقعنا</h4></a>
-                </div>
                 <div class="half">
                   <h1>إعرف المزيد</h1>
                   <div class="move_down">
                   <p><?php echo the_content();?></p>
                   </div>
+                  <a href="<?php echo get_field('website_link')?>" target="_blank" style="text-decoration:none;float:left;"><h4 style="margin:0;">قم بزيارة موقعنا</h4></a>
                 </div>
               </div>
             </div>
