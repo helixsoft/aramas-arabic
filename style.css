@@ -83,7 +83,7 @@ header .container1 .logo {
 }
 header .title {
     margin: 0 auto;
-    width: 633px;
+    width: 543px;
     height: 76px;
     float: left;
     padding-top: 24px;
@@ -91,7 +91,7 @@ header .title {
 }
 header .title.service{
     margin: 0 auto;
-    width: 633px;
+    width: 543px;
     height: 59px;
     float: left;
     padding-top: 40px;
@@ -99,7 +99,7 @@ header .title.service{
 }
 header .title.blog {
     margin: 0 auto;
-    width: 633px;
+    width: 543px;
     height: 57px;
     float: left;
     padding-top: 43px;
@@ -107,7 +107,7 @@ header .title.blog {
 }
 header .title.home {
     margin: 0 auto;
-    width: 633px;
+    width: 543px;
     height: 80px;
     float: left;
     padding-top: 26px;
@@ -115,7 +115,7 @@ header .title.home {
 }
 header .title.faq {
 margin: 0 auto;
-width: 633px;
+width: 543px;
 height: 67px;
 float: left;
 padding-top: 32px;
@@ -123,7 +123,7 @@ padding-right: 20px;
 }
 header .title.contact {
 margin: 0 auto;
-width: 633px;
+width: 543px;
 height: 68px;
 float: left;
 padding-top: 31px;
@@ -131,7 +131,7 @@ padding-right: 20px;
 }
 header .title.inner {
 margin: 0 auto;
-width: 633px;
+width: 460px;
 height: 55px;
 float: left;
 padding-top: 45px;
@@ -2055,6 +2055,42 @@ textarea:focus{
 }
 .black{
     color: #000;
+}
+.theme{
+    float: left;
+    margin-top: 16px;
+    margin-right: 28px;
+    font-weight: normal;
+    font-family: 'elham';
+    font-size: 20px;
+}
+.theme span:first-child{
+    font-size: 14px;
+}
+.theme span:last-child{
+    font-size: 14px;
+}
+.theme span:last-child{
+    text-decoration: none;
+font-family: 'elham';
+margin-top: -1px;
+line-height: 1;
+position: relative;
+top: -3px;
+color: #1f1f24;
+}
+.theme span:first-child a{
+text-decoration: none;
+color: #1f1f24;
+font-weight: bold;
+}
+.theme span:last-child a{
+text-decoration: none;
+font-size: 20px;
+color: #1f1f24;
+}
+.theme span a:hover{
+color: #9a8e55;
 }
 @media screen and (max-width:1024px){
     header .container1{

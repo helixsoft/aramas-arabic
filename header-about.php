@@ -15,6 +15,7 @@
 <body> 
 <header>
 	<div class="container1">
+    <div class="theme"><span><a href="<?php echo site_url()?>/en">EN</a></span> / <span><a href="<?php echo site_url()?>">عربي</a></span></div>
     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
     <div class="title">
       <h1><img src="<?php echo IMAGES?>/ar_about_us_page_title.png"></h1>
