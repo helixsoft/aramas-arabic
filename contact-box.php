@@ -14,7 +14,7 @@
     if(empty($fname) || empty($lname) || empty($phone)|| empty($message) || empty($email)){
       echo "الرجاء تزويدنا بجميع المعلومات المطلوبة";
     }else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-    	echo "Email Address Invalid.";
+    	echo "عنوان البريد الإلكتروني غير صحيح.";
     }else{
           $name = $fname.$lname;
           $sent = wp_mail($to, $subject, strip_tags($message).'Name:'.$name.'\n'.'Phone:'.$phone, $headers);

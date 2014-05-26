@@ -6,6 +6,7 @@
 
 get_header('faq'); ?>
 <div class="fcontainer clearfix">
+		<div class="gap"></div>
 		<div class="container" style="direction:RTL;">
 			<div class="content faq">
 							<?php $wp_query_faq = new WP_Query(); ?>

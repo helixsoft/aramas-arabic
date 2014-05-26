@@ -15,9 +15,8 @@
 <body> 
 <header>
 	<div class="container1">
-  <div class="theme"><span><a href="<?php echo site_url()?>/en">EN</a></span> / <span><a href="<?php echo site_url()?>">عربي</a></span></div>
+  <div class="theme"><span><a href="<?php echo site_url()?>/en">EN</a></span> / <span><a href="<?php echo site_url()?>" style="color:#9a8e55">عربي</a></span></div>
     <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ,'container' => 'nav') ); ?>
-    <div class="theme"><span><a href="<?php echo site_url()?>/en">EN</a></span>/<span><a href="<?php echo site_url()?>">عربي</a></span></div>
     <div class="title inner">
       <h1 class="typeface-js" style="font-family: Tahoma;"><?php echo the_title();?></h1>
     </div>
